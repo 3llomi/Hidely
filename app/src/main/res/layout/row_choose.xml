@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/root_layout">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/img_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user_img"
+            android:text="Test" />
+
+        <com.devlomi.hidely.hidelyviews.HidelyImageView
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:id="@+id/check_mark_view"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/circle_bg"
+            android:src="@drawable/ic_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_gravity="center_vertical"
+        android:text="Text"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
