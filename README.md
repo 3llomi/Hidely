@@ -3,20 +3,13 @@ Custom Views that can hide/show a View with some Animations (inspired by the And
 
 
 ## Demo
-<p align="left">
-  <img src="etc/chooser-example.GIF" height="500" alt="Choose example" />
+
+
+<p float="left">
+  <img src="etc/scroll-example.GIF" width="250" />
+  <img src="etc/simple-example.GIF" width="250" /> 
+  <img src="etc/chooser-example.GIF" width="250" />
 </p>
-
-<p align="center">
-  <img src="etc/simple-example.GIF" height="500" alt="Simple example" />
-</p>
-
-<p align="right">
-  <img src="etc/scroll-example.GIF" height="500" alt="Simple example" />
-</p>
-
-
-
 
 
 ## Install
