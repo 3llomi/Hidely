@@ -60,7 +60,7 @@ if you want to make your own custom view then :
 
     @Override
     public boolean isShowing() {
-        return hidelyCore == null ? false : hidelyCore.isShowingHidely();
+        return hidelyCore == null ? false : hidelyCore.isShowing();
     }
 
     @Override
