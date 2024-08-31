@@ -13,9 +13,21 @@ Custom Views that can hide/show a View with some Animations (inspired by the And
 
 
 ## Install
+Add this to your project build.gradle
+
+```
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add this to your module build.gradle
+
 ```gradle
 dependencies {
-    compile 'com.devlomi.hidely:hidely:1.0.0'
+    implementation 'com.github.3llomi:hidely:1.0'
 }
 ```
 
