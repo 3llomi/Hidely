@@ -1,16 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'maven-publish'
 
-publish {
-    userOrg = 'devlomi'
-    groupId = 'com.devlomi.hidely'
-    artifactId = 'hidely'
-    uploadName = 'Hidely'
-    publishVersion = '1.0.0'
-    desc = 'Custom Views that can hide or show a View with some Animations (inspired by the Android FAB)'
-    dryRun = false
-    website = 'https://github.com/3llomi/Hidely/'
-}
 
 android {
     compileSdkVersion 27
@@ -35,6 +25,13 @@ android {
         }
     }
 
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {
@@ -44,4 +41,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.devlomi.hidely'
+                artifactId = 'hidely'
+                version = '1.0'
+            }
+        }
+    }
 }
